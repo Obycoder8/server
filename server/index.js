@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post("/api/login", (req, res) => {
+app.post(":3001/api/login", (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
   const sqlLoginCheck =
